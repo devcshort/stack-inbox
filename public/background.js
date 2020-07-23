@@ -26,8 +26,7 @@ function fetchNotifications() {
 
         if (unreadItems.length > 0) {
             chrome.browserAction.setBadgeText({ text: unreadItems.length.toString() });
-            chrome.browserAction.setBadgeBackgroundColor('red');
-            chrome.browserAction.setBadgeTextColor('white');
+            chrome.browserAction.setBadgeTextColor({ color: 'white' });
         }
 
         let notifications = [];
@@ -39,16 +38,11 @@ function fetchNotifications() {
           const comment = item.getElementsByClassName('item-summary')[0];
           const aTag = item.getElementsByTagName('a')[0];
 
-          let unread = false;
           let url = '';
           let typeForNotif = '';
           let dateForNotif = '';
           let titleForNotif = '';
           let commentForNotif = '';
-
-          if (item.classList.contains('unread-item')) {
-            unread = true;
-          }
 
           if (type != null) {
             let text = type.textContent;
@@ -77,8 +71,7 @@ function fetchNotifications() {
             created: dateForNotif,
             title: titleForNotif,
             comment: commentForNotif,
-            source: url,
-            unread: unread
+            source: url
           });
         }
 

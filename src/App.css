@@ -1,8 +1,6 @@
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   min-width: 320px;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
@@ -14,6 +12,7 @@
   display: block;
   text-decoration: none;
   color: inherit;
+  padding: 5px;
 }
 
 .link-to-so:hover {
