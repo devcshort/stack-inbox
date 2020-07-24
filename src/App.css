@@ -5,7 +5,7 @@
 }
 
 .App-link {
-  color: #FB8024;
+  color: #fb8024;
 }
 
 .link-to-so {
@@ -15,6 +15,90 @@
   padding: 5px;
 }
 
-.link-to-so:hover {
+.App-header .link-to-so:hover {
   background: hsl(220, 13%, 0%);
+}
+
+.Light-header {
+  background-color: white !important;
+  min-width: 320px;
+  color: black;
+}
+
+.Light-header .link-to-so:hover {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.switch-container {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme-indicator {
+  color: slategray;
+  margin-left: 2%;
+  text-transform: uppercase;
+}
+
+.Light-header.App-link {
+  color: #282c34;
+}
+
+.switch {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 30px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  transition: 0.5s;
+  border: 2px solid #fb8024;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  top: 5px;
+  background-color: #fb8024;
+  transition: 0.5s;
+}
+
+.switch input {
+  display: none;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:checked + .slider:before {
+  transform: translateX(25px) rotate(45deg);
+  background: #fb8024;
+}
+
+.slider.round {
+  border-radius: 35px;
+}
+
+.slider.round:before {
+  width: 43%;
+  height: 40%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform: rotateZ(-45deg);
 }
