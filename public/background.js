@@ -27,6 +27,8 @@ function fetchNotifications() {
         if (unreadItems.length > 0) {
             chrome.browserAction.setBadgeText({ text: unreadItems.length.toString() });
             chrome.browserAction.setBadgeTextColor({ color: 'white' });
+        } else {
+            chrome.browserAction.setBadgeText({ text: '' });
         }
 
         let notifications = [];
