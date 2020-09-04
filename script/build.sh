@@ -14,6 +14,8 @@ build() {
     cp -r build/* dist
 
     mv dist/index.html dist/popup.html
+
+    rm -rf build
 }
 
 build
