@@ -13,6 +13,15 @@
       "contributions": [
         "test"
       ]
+    },
+    {
+      "login": "devcshort",
+      "name": "Chris Short",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/13677134?v=4",
+      "profile": "https://www.chrisrshort.com",
+      "contributions": [
+        "projectManagement"
+      ]
     }
   ],
   "contributorsPerLine": 7,
