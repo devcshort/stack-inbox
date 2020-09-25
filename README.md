@@ -1,5 +1,5 @@
 # StackInbox
-![NPM Downloads](https://img.shields.io/npm/dm/react-hls-player?style=flat-square)
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 
 ### Chrome Extension for Stack Overflow Inbox and Notifications.
