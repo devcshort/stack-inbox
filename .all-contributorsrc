@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "mxrcochxvez",
+      "name": "Marco Chavez",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/43889446?v=4",
+      "profile": "https://www.marcochavez.info/",
+      "contributions": [
+        "test"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "stack-inbox",
+  "projectOwner": "devcshort",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
