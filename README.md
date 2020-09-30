@@ -1,8 +1,10 @@
-# StackInbox
+![StackInbox](./StackInbox.png)
+<p align="center">
+<a href="#contributors-"><img src="https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square" alt="All Contributors"></a>
+</p>
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+**StackInbox** is a Google Chrome extension for Stack Overflow inbox and notifications.
 
-### Chrome Extension for Stack Overflow Inbox and Notifications.
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
