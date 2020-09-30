@@ -1,9 +1,43 @@
+![StackInbox](./StackInbox.png)
+<p align="center">
+<a href="#contributors-"><img src="https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square" alt="All Contributors"></a>
+</p>
+
 # StackInbox
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+**StackInbox** is a Google Chrome extension for Stack Overflow inbox and notifications.
 
-### Chrome Extension for Stack Overflow Inbox and Notifications.
-## Contributors ✨
+# Installation
+
+Clone the repo and navigate to the project folder and run:
+
+```
+npm ci
+```
+
+```
+npm run build
+```
+
+## Adding to Chrome
+
+Open Google Chrome and navigate to ```chrome://extensions/```
+
+Enable ```Developer mode``` from the top right.
+
+![Dev Mode](./dev_mode.png)
+
+Click the ```Load unpacked``` button to load the extension.
+
+![Load unpacked](./load_unpacked.png)
+
+Navigate to the ```public``` folder in the extension's directory and click okay.
+
+The **StackInbox** extension will now be visible.
+
+![extension](./extension.png)
+
+# Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
