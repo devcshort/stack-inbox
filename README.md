@@ -21,7 +21,21 @@ npm run build
 
 ## Adding to Chrome
 
-Open Chrome and navigate to ```chrome://extensions/```
+Open Google Chrome and navigate to ```chrome://extensions/```
+
+Enable ```Developer mode``` from the top right.
+
+![Dev Mode](./dev_mode.png)
+
+Click the ```Load unpacked``` button to load the extension.
+
+![Load unpacked](./load_unpacked.png)
+
+Navigate to the ```public``` folder in the extension's directory and click okay.
+
+The **StackInbox** extension will now be visible.
+
+![extension](./extension.png)
 
 # Contributors ✨
 
