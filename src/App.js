@@ -6,7 +6,14 @@ function App() {
   const [notifications, setNotifications] = useState([]);
 
   useEffect(() => {
-    setNotifications(JSON.parse(localStorage.getItem('notifications')));
+    const localStorageNotifications = JSON.parse(
+      localStorage.getItem('notifications')
+    );
+    if (!localStorageNotifications) {
+      setNotifications([]);
+    } else {
+      setNotifications(localStorageNotifications);
+    }
     setLoading(false);
   }, []);
 
@@ -21,27 +28,42 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        { loading && <h3>Loading Notifications...</h3> }
+    <div className='App'>
+      <header className='App-header'>
+        {loading && <h3>Loading Notifications...</h3>}
 
-        { !loading && notifications.length === 0 && <p>You have nothing in your inbox. Make sure you&apos;re logged in to Stack Overflow so this inbox populates.</p>}
+        {!loading && notifications.length === 0 && (
+          <p>
+            You have nothing in your inbox. Make sure you&apos;re logged in to
+            Stack Overflow so this inbox populates.
+          </p>
+        )}
 
-        { notifications.map((notif, key) => {
+        {notifications.map((notif, key) => {
           return (
             <a
-              className="link-to-so"
+              className='link-to-so'
               href={notif.source}
-              rel="noopener noreferrer"
-              target="_blank"
+              rel='noopener noreferrer'
+              target='_blank'
               key={key}
             >
-              <p style={{ display: 'flex', justifyContent: 'space-between', margin: 0, fontSize: 12, color: 'hsl(220, 13%, 68%)' }}>
-                <span>{ notif.type }</span>
-                <span>{ notif.created }</span>
+              <p
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  margin: 0,
+                  fontSize: 12,
+                  color: 'hsl(220, 13%, 68%)',
+                }}
+              >
+                <span>{notif.type}</span>
+                <span>{notif.created}</span>
               </p>
-              <p className="App-link" style={{ fontSize: 14, margin: 0 }}>{ notif.title }</p>
-              <p style={{ fontSize: 12, margin: 0 }}>{ notif.comment }</p>
+              <p className='App-link' style={{ fontSize: 14, margin: 0 }}>
+                {notif.title}
+              </p>
+              <p style={{ fontSize: 12, margin: 0 }}>{notif.comment}</p>
             </a>
           );
         })}
