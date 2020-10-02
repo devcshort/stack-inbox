@@ -13,6 +13,10 @@
 Clone the repo and navigate to the project folder and run:
 
 ```
+yarn install
+```
+
+```
 npm ci
 ```
 
