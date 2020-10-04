@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - 10
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: npm run deploy
+  on:
+    branch: master
+env:
+  EXTENSION_ID=fphiplmebgimlmpikocgkdffkmmenmha

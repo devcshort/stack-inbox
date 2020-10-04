@@ -15,7 +15,8 @@
     "start": "react-scripts start",
     "build": "bash ./script/build.sh",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "webstore upload --auto-publish"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,5 +32,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "chrome-webstore-upload-cli": "^1.2.0"
   }
 }
